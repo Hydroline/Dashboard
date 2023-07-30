@@ -1,0 +1,463 @@
+.mw-body-header,
+.page-info {
+    display: none;
+}
+
+.dh-subpage-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--color-surface-3);
+}
+
+.dh-subpage-header .title {
+    font-family: 'AlibabaPuHuiTi';
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#player-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-image: linear-gradient(to left, transparent, var(--color-surface-0) 65%), url(https://h2-wiki-1254268741.cos.accelerate.myqcloud.com/b/b5/MediaWiki_LOGO.svg);
+    background-size: 60px;
+    padding-right: 18px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#player-info #wikiID {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+    font-family: 'Oswald';
+    font-size: 13px;
+}
+
+#player-info #id {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: 'Oswald';
+    height: 80px;
+    padding-bottom: 6px;
+}
+
+.dh-player-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dh-player-card {
+    margin: 0 auto;
+    max-width: 350px;
+    height: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    background: var(--color-surface-2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.dh-player-card__noLogin {
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: var(--color-surface-3);
+    border-radius: 15px;
+    padding: 12px;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    text-align: center;
+    box-shadow: var(--homecard-box-shadow);
+    display: none;
+}
+
+.dh-player-card__noLogin p {
+    margin: 0!important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.dh-player-card__noLogin li {
+    text-align: left;
+    font-size: 14px;
+}
+
+.player-card__blur::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+}
+
+.dh-infobox .note {
+    padding: 5px;
+    border-radius: 10px;
+    text-indent: 2em;
+    letter-spacing: 0.825px;
+    font-size: 14px;
+}
+
+.dh-infobox .tips {
+    text-align: center;
+    letter-spacing: 0.825px;
+    font-size: 9px;
+    color: var(--color-base--subtle);
+}
+
+.dh-infobox .note li {
+    list-style: none;
+}
+
+.player-basicinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-basicinfo #pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+}
+
+.player-basicinfo #nick {
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: 'Minecraft AE';
+}
+
+.player-basicinfo #id {
+    font-size: 14px;
+    font-family: 'Minecraft AE';
+}
+
+#piicinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+#piicinfo #name {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+#piicinfo #code {
+    font-size: 20px;
+    font-family: Oswald;
+}
+
+.dh-player-proinfo {
+    margin: 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dh-player-proinfo .name {
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-align: right;
+    color: var(--color-base--subtle);
+}
+
+.dh-player-proinfo .code {
+    text-align: right;
+}
+
+.dh-block .grid .grid-item #IPregion {
+    font-weight: unset!important;
+    font-size: 10px;
+}
+
+.dh-infobox {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.dh-block {
+    padding: 10px;
+    background: var(--color-surface-2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.dh-block .title {
+    letter-spacing: 1px;
+    font-size: 0.8125rem;
+    color: var(--color-base--subtle);
+}
+
+.dh-block .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;    
+}
+
+.dh-block .grid .grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.dh-block .grid .grid-item .name {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: var(--color-base--subtle);
+}
+
+.dh-block .grid .grid-item .info {
+    font-weight: bold;
+    color: var(--color-base--emphasized);
+    font-size: 15px;
+}
+
+.skin-citizen-dark .dh-block #barcode g {
+	fill: white!important;
+}
+
+.dh-block #barcode {
+    margin: 0 auto;
+}
+
+.dh-block #barcode text {
+    font-size: 14px!important;
+    font-family: 'Consola'!important;
+}
+
+/* 表单项样式 */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M16 10l-1.414 1.414L12 8.828 9.414 11.4 8 10l4-4z' fill='%23000' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+    margin-right: -26px;
+    padding-right: 30px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 0.9375rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+/* 2列的grid布局 */
+#registration-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#registration-form #first {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#registration-form #second {
+    grid-row: 1; 
+    grid-column: 2;
+}
+
+#registration-form #third {
+    grid-row: 2; 
+    grid-column: 1;
+}
+
+#registration-form #fourth {
+    grid-row: 2; 
+    grid-column: 2;
+}
+
+#registration-form button {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+#registration-form #con-method-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#registration-form #con-method-box select {
+    max-width: 95px;
+    margin-right: 10px;
+}
+
+#bind-account-form #authme-form {
+    display: flex;
+    gap: 5px;
+}
+
+#bind-account-form #authme-form select {
+    width: 80px;
+    margin-right: 5px;
+}
+
+.blur-overlay::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(25px);
+    transition: opacity 0.4s ease;
+}
+
+@media (max-width: 1080px) {
+    .dh-infobox {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dh-player-card ._nb-spinner {
+    top: 40%!important;
+    left: 46%!important;
+}
+
+._nb-spinner {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-top: 6px solid var(--color-primary);
+    border-right: 4px solid transparent;
+    border-radius: 50%;
+    animation: 1s _spin linear infinite;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@keyframes _spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.wikiUser__noLogin {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background: var(--color-surface-3);
+    border-radius: 10px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    box-shadow: var(--homecard-box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wikiUser__noLogin .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.wikiUser__noLogin .note {
+    font-size: 15px;
+}
+
+/* chunk */
+.chunkBlur::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+}
+
+.dh-block .icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.dh-block .wb-tips {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dh-block ._nb-spinner {
+    display: block;
+    margin: 0 auto;
+    transform: unser!important;
+    position: unset!important;
+}
+
+.dh-footer-desc {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.dh-footer-desc .dh-db-version {
+    color: var(--color-surface-4);
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-family: 'Consola';
+}
+
+.dh-footer-desc .dh-db-desc {
+    letter-spacing: 2px;
+    color: var(--color-base--subtle);
+    font-family: 'AlibabaPuHuiTi';
+}
